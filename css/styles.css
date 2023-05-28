@@ -37,6 +37,8 @@ p {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -120,6 +122,7 @@ p {
 /*--------------- HERO ------------------*/
 
 .hero {
+  max-width: 1440px;
 }
 
 .hero-section {
@@ -197,7 +200,6 @@ p {
 }
 
 .works-text-title {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 
@@ -228,6 +230,7 @@ p {
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .works-icon {
@@ -302,13 +305,11 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  margin-bottom: 8px;
 }
 
 .team-person {
   padding: 32px 16px;
-}
-.soc {
-  margin-top: 8px;
 }
 
 .team-soc-list {
@@ -396,6 +397,8 @@ p {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .options-btn:hover,
@@ -403,6 +406,8 @@ p {
   color: var(--white-color);
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .options-btn-list {
@@ -411,6 +416,10 @@ p {
   align-items: center;
   gap: 24px;
   margin-bottom: 72px;
+}
+
+.oplions-link {
+  display: block;
 }
 
 .options-list {
