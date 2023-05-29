@@ -4,6 +4,7 @@
   --iris-color: #4d5ae5;
   --slate-color: #434455;
   --cloud-color: #f4f4fd;
+  --grey-color: #8e8f99;
 }
 
 body {
@@ -122,7 +123,6 @@ p {
 /*--------------- HERO ------------------*/
 
 .hero {
-  max-width: 1440px;
 }
 
 .hero-section {
@@ -138,6 +138,7 @@ p {
   flex-grow: 1;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 .hero-text {
@@ -237,7 +238,8 @@ p {
   width: 64px;
   height: 64px;
 }
-
+.icons {
+}
 /*--------------- SERVICES ------------------*/
 .servisec {
   padding-bottom: 120px;
@@ -331,7 +333,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #f4f4fd;
 }
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
+}
+
 /*--------------- CUSTOMERS ------------------*/
 
 .customers {
@@ -339,6 +348,15 @@ p {
   padding-bottom: 120px;
 }
 
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: #2e2f42;
+}
 .customers-list {
   display: flex;
   gap: 24px;
@@ -357,17 +375,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--grey-color);
 }
 
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   border-color: #404bbf;
+  color: #404bbf;
 }
 
 .customers-link:hover .customers-icon,
@@ -521,6 +541,7 @@ p {
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
+
 .footer-soc-icon {
   fill: #f4f4fd;
 }
